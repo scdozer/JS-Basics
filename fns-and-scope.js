@@ -5,7 +5,7 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
 function isTyler (name){
-  if (name === "Tyler"){
+  if (name === 'Tyler'){
     return true;
   }
   return false;
@@ -17,8 +17,7 @@ function isTyler (name){
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 function getName(){
-  var name = prompt('Enter Your Name');
-  return name;
+  return prompt('Whats your name?');
 }
 
 
@@ -28,9 +27,10 @@ function getName(){
 
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
+welcome(getName());
 
 function welcome(getName){
-  alert ("Welcome, " + getName);
+  alert ('Welcome, ' + getName);
 }
 
 
@@ -83,7 +83,7 @@ alert (newMyName);
 
 function outerFn(){
   return function(){
-    newMyName;
+    newMyName();
   }
 }
 
