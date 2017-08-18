@@ -83,7 +83,7 @@ alert (newMyName);
 
 function outerFn(){
   return function(){
-    newMyName();
+    newMyName;
   }
 }
 
